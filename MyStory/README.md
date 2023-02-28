@@ -32,12 +32,7 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/TaoLyn838/IOS102/tree/main/MyStory/MyStory/AppWalkThrough' width='300' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+<img src="https://github.com/TaoLyn838/IOS102/tree/main/MyStory/MyStory/AppWalkThrough" width="400" height="800"><br>
 
 ## Notes
 
