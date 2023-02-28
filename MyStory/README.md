@@ -1,4 +1,4 @@
-# Project 1 - *Name of App Here*
+# Project 1 - *MyStory*
 
 Submitted by: **Chengtao Lin**
 
@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/TaoLyn838/IOS102/tree/main/MyStory/MyStory/AppWalkThrough' width='300' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
