@@ -32,7 +32,7 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/TaoLyn838/IOS102/tree/main/MyStory/MyStory/AppWalkThrough' width='300' alt='Video Walkthrough' />
 
-<img src="https://github.com/TaoLyn838/IOS102/tree/main/MyStory/MyStory/AppWalkThrough" width="400" height="800"><br>
+<img src="https://github.com/TaoLyn838/IOS102/blob/main/MyStory/MyStory/AppWalkThrough/Walkthrough.gif" width="400" height="800"><br>
 
 ## Notes
 
