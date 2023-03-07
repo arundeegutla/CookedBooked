@@ -4,7 +4,7 @@ Submitted by: **Chengtao Lin**
 
 **Name of your app** is a movie browsing app that... [TODO] 
 
-Time spent: **X** hours spent in total
+Time spent: **7** hours spent in total
 
 ## Required Features
 
@@ -28,19 +28,10 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+<img src="https://github.com/TaoLyn838/IOS102/blob/main/Flixster/Flixster/AppWalkThrough/Flixster.gif" width="600" height="600"><br>
 
 ## Notes
-
+The App's Detail screen corrently does not support landscape orientation.
 
 ## License
 
