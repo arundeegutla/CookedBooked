@@ -2,7 +2,7 @@
 
 Submitted by: **Chengtao Lin**
 
-**Name of your app** is a movie browsing app that... [TODO] 
+Flixster is a movie browsing app that list movies in its main screen, and it allow user to see more info about the movie when they tap a movie from the list.
 
 Time spent: **7** hours spent in total
 
