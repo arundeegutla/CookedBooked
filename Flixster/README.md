@@ -67,13 +67,6 @@ Here's a walkthrough of implemented user stories:
 
 <img src="https://github.com/TaoLyn838/IOS102/blob/main/Flixster/Flixster/AppWalkThrough/Flixster_v2.gif" width="600" height="600"><br>
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
-
 ## Notes
 Figuring out the constraint in UIScrollView took me almost 5 hours, and Scroll View Guide helped me immensely.
 
