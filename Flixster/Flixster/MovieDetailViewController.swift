@@ -14,34 +14,47 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var movieImageView: UIImageView!
     
     @IBOutlet weak var releaseDateLabel: UILabel!
-    @IBOutlet weak var primaryGenreNameLabel: UILabel!
-    @IBOutlet weak var trackTimeMillisLabel: UILabel!
+    
+    @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var aveUsersRatingLabel: UILabel!
     @IBOutlet weak var totalVoteLabel: UILabel!
-        
-    @IBOutlet weak var longDescriptionLabel: UILabel!
-    @IBOutlet weak var artistNameLabel: UILabel!
+
+    @IBOutlet weak var popularityLabel: UILabel!
+    
+    @IBOutlet weak var overViewTextView: UITextView!
+    
+    @IBOutlet weak var ratingView: UIView!
     
     var tracks: MovieTrack!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        Nuke.loadImage(with: tracks.artworkUrl100, into: movieImageView)
-        
+        designUIView(Container: ratingView)
+        Nuke.loadImage(with: ImageRequestURL(poster: tracks.backdrop_path, size: ImageSupportSize.original.rawValue), into: movieImageView)
+
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
-        releaseDateLabel.text = dateFormatter.string(from: tracks.releaseDate)
+        releaseDateLabel.text = "\(dateFormatter.string(from: formattedReleaseDate(dateString: tracks.release_date)!)) Release"
         
-        artistNameLabel.text = tracks.artistName
-        primaryGenreNameLabel.text = tracks.primaryGenreName
-        trackTimeMillisLabel.text = formattedTrackDuration(with: tracks.trackTimeMillis)
-        aveUsersRatingLabel.text = "\(tracks.rating.averageUserRating)"
-        totalVoteLabel.text = "\(formatNumber(tracks.rating.totalVote)) people vote"
-        longDescriptionLabel.text = tracks.longDescription
+        titleLabel.text = tracks.title
+        aveUsersRatingLabel.text = "\(tracks.vote_average) Vote Average"
+        totalVoteLabel.text = "\(tracks.vote_count) Vote"
+        popularityLabel.text = "\(tracks.popularity) Popular"
+        overViewTextView.text = "\(tracks.overview)"
+        
     }
+    
+    func designUIView(Container: UIView) {
+        Container.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        Container.layer.shadowOpacity = 1.0
+        Container.layer.shadowRadius = 0.0
+        Container.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        Container.layer.masksToBounds = true
+        Container.layer.cornerRadius = 15
+    }
+    
     
 
     /*

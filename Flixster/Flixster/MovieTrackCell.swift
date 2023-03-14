@@ -27,10 +27,9 @@ class MovieTrackCell: UITableViewCell {
     }
     
     func configure(with track: MovieTrack) {
-        movieNameLabel.text = track.trackName
-        shortDescriptionLabel.text = track.shortDescription
-        
-        Nuke.loadImage(with: track.artworkUrl100, into: movieImageView)
-    }
+        movieNameLabel.text = track.title
+        shortDescriptionLabel.text = track.overview
 
+        Nuke.loadImage(with: ImageRequestURL(poster: track.poster_path, size: ImageSupportSize.w92.rawValue), into: movieImageView)
+    }
 }

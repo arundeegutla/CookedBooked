@@ -1,4 +1,4 @@
-# Project 2 - *Flixster*
+# Project 2 - *Flixster - Pt. 1*
 
 Submitted by: **Chengtao Lin**
 
@@ -28,10 +28,54 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-<img src="https://github.com/TaoLyn838/IOS102/blob/main/Flixster/Flixster/AppWalkThrough/Flixster.gif" width="600" height="600"><br>
+<img src="https://github.com/TaoLyn838/IOS102/blob/main/Flixster/Flixster/AppWalkThrough/Flixster_v1.gif" width="600" height="600"><br>
 
 ## Notes
 The App's Detail screen corrently does not support landscape orientation.
+
+
+# Project 3 - *Flixster - Pt. 2*
+
+Submitted by: **Chengtao Lin**
+
+**Name of your app** is an app that introduces networking ... [TODO] 
+
+Time spent: **16** hours spent in total
+
+## Required Features
+
+The following **required** functionality is completed:
+
+- [x] Implement network call and table view to display a list of movies currently playing (title, description, image)
+- [x] App has a collection view with the same list of movies
+- [x] Uses a tab bar controller to switch between collection view and table view screens
+ 
+The following **optional** features are implemented:
+
+- [ ] Make an additional network call to another end-point.    
+- [x] Allow users to scroll when context items are off-screen (table view implemention)
+
+The following **additional** features are implemented:
+
+- [x] List anything else that you can get done to improve the app functionality!
+    - [x] Use UITextView that user can copy the text from over view
+    - [x] design UIView in detail screen
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src="https://github.com/TaoLyn838/IOS102/blob/main/Flixster/Flixster/AppWalkThrough/Flixster_v2.gif" width="600" height="600"><br>
+
+<!-- Replace this with whatever GIF tool you used! -->
+GIF created with ...  
+<!-- Recommended tools:
+[Kap](https://getkap.co/) for macOS
+[ScreenToGif](https://www.screentogif.com/) for Windows
+[peek](https://github.com/phw/peek) for Linux. -->
+
+## Notes
+Figuring out the constraint in UIScrollView took me almost 5 hours, and Scroll View Guide helped me immensely.
 
 ## License
 
