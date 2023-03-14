@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 ## Notes
 The App's Detail screen corrently does not support landscape orientation.
 
-
+##
 # Project 3 - *Flixster - Pt. 2*
 
 Submitted by: **Chengtao Lin**
