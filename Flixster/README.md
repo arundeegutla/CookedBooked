@@ -18,8 +18,8 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 - [x] Unique UI changes, such as background, font/color changes, etc.
-- [ ] User implements a collection view
-- [ ] User implemenets tab bar controller with at least two screens
+- [x] User implements a collection view
+- [x] User implemenets tab bar controller with at least two screens
 
 The following **additional** features are implemented:
 
