@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="" width="600" height="600"><br>
+<img src="https://github.com/TaoLyn838/IOS102/blob/main/PhotoScavengerHunt/AppWalkThrough/PhotoScavengerHunt.gif" width="600" height="600"><br>
 
 
 ## Notes
