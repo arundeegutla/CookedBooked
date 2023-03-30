@@ -32,7 +32,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="https://github.com/TaoLyn838/IOS102/blob/main/BeRealClone/AppWalkThrough/AppWalkThrough.gif" width="700" height="600"><br>
+<img src="" width="700" height="600"><br>
 
 
 ## Notes
