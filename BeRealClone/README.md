@@ -1,6 +1,6 @@
 # Project 5 - *BeRealClone*
 
-Submitted by: **Chengtao**
+Submitted by: **Chengtao Lin**
 
 **BeRealClone** is an app that clones some of the main functionalities of the trending app called BeReal. In this app, users post a photo of what they’re currently doing upon receiving a random notification during the day. Only after posting a photo can the user see their friends’ photos.
 
@@ -32,7 +32,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="" width="600" height="600"><br>
+<img src="https://github.com/TaoLyn838/IOS102/blob/main/BeRealClone/AppWalkThrough/AppWalkThrough.gif" width="600" height="600"><br>
 
 
 ## Notes
