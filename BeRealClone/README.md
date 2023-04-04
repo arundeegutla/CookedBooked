@@ -1,4 +1,4 @@
-# Project 5 - *BeRealClone　Pt. 1*
+# Project 5 - *BeRealClone Pt. 1*
 
 Submitted by: **Chengtao Lin**
 
