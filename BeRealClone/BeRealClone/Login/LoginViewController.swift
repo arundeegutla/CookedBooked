@@ -67,7 +67,7 @@ class LoginViewController: UIViewController {
                         content.body = "Remember to upload today's photo!"
                         content.sound = .default
                     
-                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: (3600*24), repeats: false)
+                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: (3600*24), repeats: true)
                         
                         let request = UNNotificationRequest(identifier: "dailyReminder", content: content, trigger: trigger)
                         
