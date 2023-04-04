@@ -14,7 +14,7 @@ class FeedViewController: UIViewController {
     @IBOutlet weak var postTableView: UITableView!
     
     var refreshControl: UIRefreshControl!
-    var postStateLocation: String!
+    var userLocation: String!
     
     private var posts = [Post]() {
         didSet {
@@ -50,9 +50,17 @@ class FeedViewController: UIViewController {
         // 1. Create a query to fetch Posts
         // 2. Any properties that are Parse objects are stored by reference in Parse DB and as such need to explicitly use `include_:)` to be included in query results.
         // 3. Sort the posts by descending order based on the created at date
+        
+        // Get the date for yesterday. Adding (-1) day is equivalent to subtracting a day.
+        // NOTE: `Date()` is the date and time of "right now".
+        let yesterdayDate = Calendar.current.date(byAdding: .day, value: (-1), to: Date())!
+
+        
         let query = Post.query()
             .include("user")
-            .order([.descending("createAt")])
+            .order([.descending("createdAt")])
+            .where("createdAt" >= yesterdayDate) // <- Only include results created yesterday onwards
+            .limit(15)
         
         // Fetch object (posts) defined in query (async)
         query.find { [weak self] result in
@@ -67,11 +75,6 @@ class FeedViewController: UIViewController {
     }
     
 
-    @objc func onRefresh() {
-        run(after: 1.5) {
-               self.refreshControl.endRefreshing()
-            }
-    }
     
     // Implement the delay method
     func run(after wait: TimeInterval, closure: @escaping () -> Void) {
@@ -85,6 +88,14 @@ class FeedViewController: UIViewController {
         refreshControl.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
         refreshControl.tintColor = .white
         postTableView.insertSubview(refreshControl, at: 0)
+    }
+    
+    @objc func onRefresh() {
+        run(after: 1.5) {
+            self.refreshControl.beginRefreshing()
+            self.queryPosts()
+            self.refreshControl.endRefreshing()
+        }
     }
     
     private func showConfirmLogoutAlert() {

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 import ParseSwift
 
 class LoginViewController: UIViewController {
@@ -13,9 +14,12 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    let notificationCenter = UNUserNotificationCenter.current()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
 
 
@@ -39,6 +43,7 @@ class LoginViewController: UIViewController {
             switch result {
             case .success(let user):
                 print("✅ Successfully logged in as user: \(user)")
+                self?.scheduleNotification()
 
                 // Post a notification that the user has successfully logged in.
                 NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
@@ -48,6 +53,38 @@ class LoginViewController: UIViewController {
             }
         }
         
+    }
+    
+    func scheduleNotification() {
+        notificationCenter.getNotificationSettings { (settings) in
+            
+            DispatchQueue.main.async {
+                
+                if settings.authorizationStatus == .authorized {
+                                    
+                    let content = UNMutableNotificationContent()
+                        content.title = "ReReal"
+                        content.body = "Remember to upload today's photo!"
+                        content.sound = .default
+                    
+                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: (3600*24), repeats: false)
+                        
+                        let request = UNNotificationRequest(identifier: "dailyReminder", content: content, trigger: trigger)
+                        
+                        UNUserNotificationCenter.current().add(request) { (error) in
+                            if let error = error {
+                                print("Error scheduling notification: \(error.localizedDescription)")
+                            } else {
+                                print("Notification scheduled")
+                            }
+                        }
+                    
+                } else {
+                    print(" Failed!")
+                }
+                
+            }
+        }
     }
     
     private func showAlert(description: String?) {

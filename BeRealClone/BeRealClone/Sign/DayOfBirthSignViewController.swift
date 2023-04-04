@@ -36,7 +36,7 @@ class DayOfBirthSignViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if let passwordViewController = segue.destination as? PasswordSignViewController {
+        if let passwordViewController = segue.destination as? LastSignupStepViewController {
             passwordViewController.username = self.username
             passwordViewController.dob = self.dob
         }

@@ -16,7 +16,10 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var captionLabel: UILabel!
     
     @IBOutlet weak var userImage: UIImageView!
+    
     @IBOutlet weak var postPhotoImageView: UIImageView!
+    
+    @IBOutlet weak var blurView: UIVisualEffectView!
     
     var postStateLocation: String!
 
@@ -56,8 +59,33 @@ class PostCell: UITableViewCell {
         
         // Date
         if let date = post.createdAt {
-            locationLabel.text = DateFormatter.postFormatter.string(from: date)
+            locationLabel.text = (DateFormatter.postFormatter.string(from: date))
         }
+        
+        
+        
+        // A lot of the following returns optional values so we'll unwrap them all together in one big `if let`
+        // Get the current user.
+        if let currentUser = User.current,
+
+            // Get the date the user last shared a post (cast to Date).
+           let lastPostedDate = currentUser.lastPostedDate,
+
+            // Get the date the given post was created.
+           let postCreatedDate = post.createdAt,
+
+            // Get the difference in hours between when the given post was created and the current user last posted.
+           let diffHours = Calendar.current.dateComponents([.hour], from: postCreatedDate, to: lastPostedDate).hour {
+
+            // Hide the blur view if the given post was created within 24 hours of the current user's last post. (before or after)
+            blurView.isHidden = abs(diffHours) < 24
+        } else {
+
+            // Default to blur if we can't get or compute the date's above for some reason.
+            blurView.isHidden = false
+        }
+
+
 
     }
 

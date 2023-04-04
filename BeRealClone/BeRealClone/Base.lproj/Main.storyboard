@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XKY-CT-cHK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XKY-CT-cHK">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,7 +41,7 @@
                                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -248,12 +249,34 @@
                                                                 </stackView>
                                                             </subviews>
                                                         </stackView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="utA-be-Ei7">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zcw-Pb-dCz">
                                                             <rect key="frame" x="0.0" y="58" width="393" height="320"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="utA-be-Ei7">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="320"/>
+                                                                </imageView>
+                                                                <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNq-lL-Zks">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="320"/>
+                                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YT2-4w-KwY">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="320"/>
+                                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    </view>
+                                                                    <blurEffect style="regular"/>
+                                                                </visualEffectView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="320" id="P7P-yO-O2U"/>
+                                                                <constraint firstAttribute="bottom" secondItem="LNq-lL-Zks" secondAttribute="bottom" id="DhW-mv-21G"/>
+                                                                <constraint firstAttribute="bottom" secondItem="utA-be-Ei7" secondAttribute="bottom" id="Jro-oz-iH5"/>
+                                                                <constraint firstItem="LNq-lL-Zks" firstAttribute="top" secondItem="Zcw-Pb-dCz" secondAttribute="top" id="UBc-oj-D4z"/>
+                                                                <constraint firstAttribute="trailing" secondItem="utA-be-Ei7" secondAttribute="trailing" id="bLa-Z4-fTE"/>
+                                                                <constraint firstAttribute="trailing" secondItem="LNq-lL-Zks" secondAttribute="trailing" id="oAG-vH-eJV"/>
+                                                                <constraint firstItem="utA-be-Ei7" firstAttribute="leading" secondItem="Zcw-Pb-dCz" secondAttribute="leading" id="soW-LH-Z3A"/>
+                                                                <constraint firstItem="utA-be-Ei7" firstAttribute="top" secondItem="Zcw-Pb-dCz" secondAttribute="top" id="tPG-06-zcp"/>
+                                                                <constraint firstItem="LNq-lL-Zks" firstAttribute="leading" secondItem="Zcw-Pb-dCz" secondAttribute="leading" id="xZQ-2h-pey"/>
+                                                                <constraint firstAttribute="height" constant="320" id="ygf-Ll-ix8"/>
                                                             </constraints>
-                                                        </imageView>
+                                                        </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMm-Qb-0Un">
                                                             <rect key="frame" x="0.0" y="386" width="393" height="25"/>
                                                             <constraints>
@@ -276,6 +299,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="blurView" destination="LNq-lL-Zks" id="8bV-hS-d6I"/>
                                             <outlet property="captionLabel" destination="CMm-Qb-0Un" id="EW0-FK-Gni"/>
                                             <outlet property="locationLabel" destination="VaM-gI-lc0" id="Ieu-eq-hFF"/>
                                             <outlet property="postPhotoImageView" destination="utA-be-Ei7" id="rou-Gs-IxS"/>
@@ -336,15 +360,15 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIt-zP-xR5">
                                         <rect key="frame" x="0.0" y="42" width="361" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="Select Photo"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Open Camera"/>
                                         <connections>
                                             <action selector="onSelectedImageTapped:" destination="YeS-OP-j9p" eventType="touchUpInside" id="sN2-6L-dhK"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZLf-yw-LyB">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EaD-yA-Z4R">
                                         <rect key="frame" x="0.0" y="84.333333333333343" width="361" height="320"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="320" id="YD7-E3-P9B"/>
+                                            <constraint firstAttribute="height" constant="320" id="hCO-6g-UqJ"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -373,7 +397,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="captionTextLabel" destination="L56-mR-QPT" id="IC1-Ey-nLn"/>
-                        <outlet property="photoImageView" destination="ZLf-yw-LyB" id="kb9-hb-Dz2"/>
+                        <outlet property="photoImageView" destination="EaD-yA-Z4R" id="5JQ-35-N9A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5i-bR-oHK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -454,7 +478,7 @@
         <!--BeReal.-->
         <scene sceneID="Rq1-EC-isB">
             <objects>
-                <viewController id="if7-qp-UAY" customClass="PasswordSignViewController" customModule="BeRealClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="if7-qp-UAY" customClass="LastSignupStepViewController" customModule="BeRealClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Pn-j2-e8H">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 import ParseSwift
 
 @main
@@ -37,6 +38,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                assertionFailure("Error saving: \(err)")
 //            }
 //        }
+        
+        // Request authorization to send notifications.
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+                if let error = error {
+                    print("Error requesting notification authorization: \(error.localizedDescription)")
+                } else if granted {
+                    print("Notification authorization granted")
+                } else {
+                    print("Notification authorization denied")
+                }
+            }
         
         return true
     }

@@ -39,6 +39,42 @@ Here's a walkthrough of implemented user stories:
 
 To make `self.userStateLocation` accessible outside the closure and for the whole `FeedViewController` is a challenge.
 
+---
+
+# Project 6 - *BeReal Pt. 2*
+
+Submitted by: **Chengtao Lin**
+
+**BeRealClone** second part is adding persistence and some cool BeReal functionality to the app.
+
+Time spent: **8** hours spent in total
+
+## Required Features
+
+The following **required** functionality is completed:
+
+- [x] User can launch camera to take photo instead of photo library
+- [x] User session persists when application is closed and relaunched
+- [x] Users are able to log out and return to sign in page
+- [x] Users are NOT able to see other photos until they upload their own    
+ 
+The following **optional** features are implemented:
+
+- [x] User receive notification when it is time to post
+- [ ] Users can make comments and view comments in posts    
+
+The following **additional** features are implemented:
+
+- [x] Users are able to see a BeReal app icon and launch screen
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src="https://github.com/TaoLyn838/IOS102/blob/main/BeRealClone/AppWalkThrough/AppWalkThrough(2).gif" width="400" height="850"><br>
+
+## Notes
+
 ## License
 
     Copyright [2023] [Chengtao Lin]
