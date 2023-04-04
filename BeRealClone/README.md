@@ -71,7 +71,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="https://github.com/TaoLyn838/IOS102/blob/main/BeRealClone/AppWalkThrough/AppWalkThrough(2).gif" width="400" height="850"><br>
+<img src="https://github.com/TaoLyn838/IOS102/blob/main/BeRealClone/AppWalkThrough/AppWalkThrough_2.gif" width="400" height="850"><br>
 
 ## Notes
 
