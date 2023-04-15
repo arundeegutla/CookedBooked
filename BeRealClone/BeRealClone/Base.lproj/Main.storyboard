@@ -341,7 +341,7 @@
             </objects>
             <point key="canvasLocation" x="901.52671755725191" y="645.77464788732402"/>
         </scene>
-        <!--Post Photo-->
+        <!--Post-->
         <scene sceneID="QCc-Sp-4zM">
             <objects>
                 <viewController id="YeS-OP-j9p" customClass="PostViewController" customModule="BeRealClone" customModuleProvider="target" sceneMemberID="viewController">
@@ -349,56 +349,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HVR-fP-YmT">
-                                <rect key="frame" x="16" y="118.99999999999997" width="361" height="404.33333333333326"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="C9c-LS-4yB">
+                                <rect key="frame" x="0.0" y="102.99999999999997" width="393" height="417.33333333333326"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L56-mR-QPT">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIt-zP-xR5">
-                                        <rect key="frame" x="0.0" y="42" width="361" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="Open Camera"/>
-                                        <connections>
-                                            <action selector="onSelectedImageTapped:" destination="YeS-OP-j9p" eventType="touchUpInside" id="sN2-6L-dhK"/>
-                                        </connections>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EaD-yA-Z4R">
-                                        <rect key="frame" x="0.0" y="84.333333333333343" width="361" height="320"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cVX-wR-m41">
+                                        <rect key="frame" x="0.0" y="1.6666666666666572" width="393" height="317"/>
+                                        <color key="tintColor" systemColor="systemPurpleColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="320" id="hCO-6g-UqJ"/>
+                                            <constraint firstAttribute="width" secondItem="cVX-wR-m41" secondAttribute="height" multiplier="393:320" id="FMw-Kr-5wp"/>
                                         </constraints>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uee-fW-vty">
+                                        <rect key="frame" x="0.0" y="340" width="393" height="77.333333333333314"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Banana Bread" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qj-sg-ZAo">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="35.333333333333336"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingredients" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dL-kw-vN0">
+                                                <rect key="frame" x="0.0" y="55.333333333333314" width="393" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcp-dg-Fac">
+                                <rect key="frame" x="145.33333333333334" y="556.33333333333337" width="102.66666666666666" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Steps">
+                                    <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bMG-0v-Ltq"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="HVR-fP-YmT" firstAttribute="top" secondItem="bMG-0v-Ltq" secondAttribute="top" constant="16" id="QY9-0D-hue"/>
-                            <constraint firstItem="HVR-fP-YmT" firstAttribute="centerX" secondItem="meM-yx-9K8" secondAttribute="centerX" id="fg5-4d-kQQ"/>
-                            <constraint firstItem="HVR-fP-YmT" firstAttribute="leading" secondItem="bMG-0v-Ltq" secondAttribute="leading" constant="16" id="gWB-9X-1IW"/>
-                            <constraint firstItem="bMG-0v-Ltq" firstAttribute="trailing" secondItem="HVR-fP-YmT" secondAttribute="trailing" constant="16" id="seJ-xD-ckj"/>
+                            <constraint firstItem="rcp-dg-Fac" firstAttribute="top" secondItem="C9c-LS-4yB" secondAttribute="bottom" constant="36" id="5M4-rK-fnq"/>
+                            <constraint firstItem="C9c-LS-4yB" firstAttribute="top" secondItem="bMG-0v-Ltq" secondAttribute="top" id="7MO-tx-Ju6"/>
+                            <constraint firstItem="bMG-0v-Ltq" firstAttribute="trailing" secondItem="C9c-LS-4yB" secondAttribute="trailing" id="Bks-2T-eOP"/>
+                            <constraint firstItem="rcp-dg-Fac" firstAttribute="centerX" secondItem="meM-yx-9K8" secondAttribute="centerX" id="NxL-wz-Zf9"/>
+                            <constraint firstItem="C9c-LS-4yB" firstAttribute="leading" secondItem="bMG-0v-Ltq" secondAttribute="leading" id="lYK-t0-qK4"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="EKo-Xt-MZ3" appends="YES" id="Hq1-gf-p6C"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Post Photo" style="editor" id="pym-kC-Y5b">
-                        <barButtonItem key="rightBarButtonItem" title="Post" id="g6R-yu-q2c">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <navigationItem key="navigationItem" title="Post" style="editor" id="pym-kC-Y5b">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="g6R-yu-q2c">
+                            <color key="tintColor" systemColor="systemPurpleColor"/>
                             <connections>
                                 <action selector="onPostTapped:" destination="YeS-OP-j9p" id="yCU-Jp-iIe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="captionTextLabel" destination="L56-mR-QPT" id="IC1-Ey-nLn"/>
-                        <outlet property="photoImageView" destination="EaD-yA-Z4R" id="5JQ-35-N9A"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5i-bR-oHK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="EKo-Xt-MZ3">
@@ -544,12 +551,15 @@
             <objects>
                 <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="7xA-Cu-0J5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="aTu-2t-KUe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aTu-2t-KUe">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="barTintColor" systemColor="systemPurpleColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemPurpleColor"/>
+                        </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <color key="textColor" systemColor="systemPurpleColor"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -564,8 +574,12 @@
     </scenes>
     <resources>
         <image name="person.2" catalog="system" width="128" height="82"/>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

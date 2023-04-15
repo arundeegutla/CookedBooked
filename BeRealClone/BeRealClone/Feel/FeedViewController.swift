@@ -26,6 +26,8 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.navigationBar.tintColor = UIColor.systemPurple
+        
         postTableView.delegate = self
         postTableView.dataSource = self
         postTableView.allowsSelection = false
