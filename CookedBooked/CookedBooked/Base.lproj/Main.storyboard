@@ -20,13 +20,13 @@
                                 <rect key="frame" x="16" y="214.33333333333334" width="361" height="423.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CookBooked" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F20-JW-mzu">
-                                        <rect key="frame" x="86.333333333333314" y="0.0" width="188.33333333333337" height="40.666666666666664"/>
+                                        <rect key="frame" x="86.333333333333329" y="0.0" width="188.33333333333337" height="40.666666666666664"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <color key="textColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="2PG-3u-i8x">
-                                        <rect key="frame" x="55.666666666666686" y="123.66666666666663" width="249.66666666666663" height="300"/>
+                                        <rect key="frame" x="55.666666666666671" y="123.66666666666663" width="249.66666666666663" height="300"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbl-mR-bzu">
                                                 <rect key="frame" x="91.333333333333329" y="0.0" width="66.999999999999986" height="33.666666666666664"/>
@@ -250,7 +250,7 @@
                                 <rect key="frame" x="16" y="187.33333333333334" width="361" height="477.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CookBooked" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXo-cC-lN1">
-                                        <rect key="frame" x="86.333333333333314" y="0.0" width="188.33333333333337" height="40.666666666666664"/>
+                                        <rect key="frame" x="86.333333333333329" y="0.0" width="188.33333333333337" height="40.666666666666664"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <color key="textColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>

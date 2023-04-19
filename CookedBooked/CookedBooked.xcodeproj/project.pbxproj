@@ -17,6 +17,8 @@
 		421CBD5129EC6BE2007FC1D3 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421CBD5029EC6BE2007FC1D3 /* SignViewController.swift */; };
 		421CBD5429EC77D9007FC1D3 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421CBD5329EC77D9007FC1D3 /* AccountViewController.swift */; };
 		421CBD5629EC82F0007FC1D3 /* AccountOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421CBD5529EC82F0007FC1D3 /* AccountOptionsCell.swift */; };
+		42630E1429EF6983005138E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42630E1329EF6983005138E0 /* User.swift */; };
+		42630E1629EF699C005138E0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42630E1529EF699C005138E0 /* Post.swift */; };
 		822F1DB1C3A4124CB7D38886 /* Pods_CookedBooked.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530A6E8CCD35509BB4758425 /* Pods_CookedBooked.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		421CBD5029EC6BE2007FC1D3 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		421CBD5329EC77D9007FC1D3 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		421CBD5529EC82F0007FC1D3 /* AccountOptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountOptionsCell.swift; sourceTree = "<group>"; };
+		42630E1329EF6983005138E0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		42630E1529EF699C005138E0 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		530A6E8CCD35509BB4758425 /* Pods_CookedBooked.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookedBooked.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		579233D751299BE319B15C60 /* Pods-CookedBooked.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookedBooked.release.xcconfig"; path = "Target Support Files/Pods-CookedBooked/Pods-CookedBooked.release.xcconfig"; sourceTree = "<group>"; };
 		82B601AC761EBF9A76128AE8 /* Pods-CookedBooked.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookedBooked.debug.xcconfig"; path = "Target Support Files/Pods-CookedBooked/Pods-CookedBooked.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 		421CBD3829EC6AE2007FC1D3 /* CookedBooked */ = {
 			isa = PBXGroup;
 			children = (
+				42630E1229EF6973005138E0 /* Model */,
 				421CBD5229EC77BC007FC1D3 /* Account */,
 				421CBD4D29EC6B96007FC1D3 /* Log&Sigin */,
 				421CBD3929EC6AE2007FC1D3 /* AppDelegate.swift */,
@@ -100,6 +105,15 @@
 				421CBD5529EC82F0007FC1D3 /* AccountOptionsCell.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		42630E1229EF6973005138E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42630E1329EF6983005138E0 /* User.swift */,
+				42630E1529EF699C005138E0 /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		51C6C07E20CAB7BBA670A3ED /* Frameworks */ = {
@@ -238,7 +252,9 @@
 				421CBD3E29EC6AE2007FC1D3 /* ViewController.swift in Sources */,
 				421CBD5629EC82F0007FC1D3 /* AccountOptionsCell.swift in Sources */,
 				421CBD5429EC77D9007FC1D3 /* AccountViewController.swift in Sources */,
+				42630E1429EF6983005138E0 /* User.swift in Sources */,
 				421CBD5129EC6BE2007FC1D3 /* SignViewController.swift in Sources */,
+				42630E1629EF699C005138E0 /* Post.swift in Sources */,
 				421CBD3A29EC6AE2007FC1D3 /* AppDelegate.swift in Sources */,
 				421CBD3C29EC6AE2007FC1D3 /* SceneDelegate.swift in Sources */,
 			);
