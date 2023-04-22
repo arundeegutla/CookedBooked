@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16F2B99329F368BC004112E8 /* SavedPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2B99229F368BC004112E8 /* SavedPostViewController.swift */; };
+		16F2B99729F36A1D004112E8 /* SavedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2B99629F36A1D004112E8 /* SavedViewCell.swift */; };
 		421F1C6729D49FFE006D3FFD /* DayOfBirthSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F1C6629D49FFE006D3FFD /* DayOfBirthSignViewController.swift */; };
 		421F1C6929D4CC5A006D3FFD /* LastSignupStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F1C6829D4CC5A006D3FFD /* LastSignupStepViewController.swift */; };
 		421F1C6D29D50272006D3FFD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F1C6C29D50272006D3FFD /* FeedViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16F2B99229F368BC004112E8 /* SavedPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostViewController.swift; sourceTree = "<group>"; };
+		16F2B99629F36A1D004112E8 /* SavedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewCell.swift; sourceTree = "<group>"; };
 		421F1C6629D49FFE006D3FFD /* DayOfBirthSignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfBirthSignViewController.swift; sourceTree = "<group>"; };
 		421F1C6829D4CC5A006D3FFD /* LastSignupStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSignupStepViewController.swift; sourceTree = "<group>"; };
 		421F1C6C29D50272006D3FFD /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16F2B99129F36891004112E8 /* SavedFeed */ = {
+			isa = PBXGroup;
+			children = (
+				16F2B99229F368BC004112E8 /* SavedPostViewController.swift */,
+				16F2B99629F36A1D004112E8 /* SavedViewCell.swift */,
+			);
+			path = SavedFeed;
+			sourceTree = "<group>";
+		};
 		4255420129CFF7D1004D5DF4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,7 @@
 		4255420C29CFF7D1004D5DF4 /* BeRealClone */ = {
 			isa = PBXGroup;
 			children = (
+				16F2B99129F36891004112E8 /* SavedFeed */,
 				4255420D29CFF7D1004D5DF4 /* AppDelegate.swift */,
 				4255420F29CFF7D1004D5DF4 /* SceneDelegate.swift */,
 				4255422129D0CDDD004D5DF4 /* Model */,
@@ -294,9 +308,11 @@
 				4255421029CFF7D1004D5DF4 /* SceneDelegate.swift in Sources */,
 				421F1C6729D49FFE006D3FFD /* DayOfBirthSignViewController.swift in Sources */,
 				421F1C7329D51619006D3FFD /* CustomUiDesign.swift in Sources */,
+				16F2B99329F368BC004112E8 /* SavedPostViewController.swift in Sources */,
 				421F1C6F29D503A7006D3FFD /* PostCell.swift in Sources */,
 				4255422929D13854004D5DF4 /* Post.swift in Sources */,
 				421F1C6929D4CC5A006D3FFD /* LastSignupStepViewController.swift in Sources */,
+				16F2B99729F36A1D004112E8 /* SavedViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
