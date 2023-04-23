@@ -17,6 +17,9 @@
 		421CBD5129EC6BE2007FC1D3 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421CBD5029EC6BE2007FC1D3 /* SignViewController.swift */; };
 		421CBD5429EC77D9007FC1D3 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421CBD5329EC77D9007FC1D3 /* AccountViewController.swift */; };
 		421CBD5629EC82F0007FC1D3 /* AccountOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421CBD5529EC82F0007FC1D3 /* AccountOptionsCell.swift */; };
+		424E14BA29F4621100407977 /* PasswordRestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424E14B929F4621100407977 /* PasswordRestViewController.swift */; };
+		424E14BD29F4656F00407977 /* AccountManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424E14BC29F4656F00407977 /* AccountManagement.swift */; };
+		424E14BF29F4905300407977 /* AlertManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424E14BE29F4905300407977 /* AlertManagement.swift */; };
 		42630E1429EF6983005138E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42630E1329EF6983005138E0 /* User.swift */; };
 		42630E1629EF699C005138E0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42630E1529EF699C005138E0 /* Post.swift */; };
 		822F1DB1C3A4124CB7D38886 /* Pods_CookedBooked.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530A6E8CCD35509BB4758425 /* Pods_CookedBooked.framework */; };
@@ -35,6 +38,9 @@
 		421CBD5029EC6BE2007FC1D3 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		421CBD5329EC77D9007FC1D3 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		421CBD5529EC82F0007FC1D3 /* AccountOptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountOptionsCell.swift; sourceTree = "<group>"; };
+		424E14B929F4621100407977 /* PasswordRestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRestViewController.swift; sourceTree = "<group>"; };
+		424E14BC29F4656F00407977 /* AccountManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagement.swift; sourceTree = "<group>"; };
+		424E14BE29F4905300407977 /* AlertManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManagement.swift; sourceTree = "<group>"; };
 		42630E1329EF6983005138E0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		42630E1529EF699C005138E0 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		530A6E8CCD35509BB4758425 /* Pods_CookedBooked.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookedBooked.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +91,7 @@
 				421CBD4229EC6AE4007FC1D3 /* Assets.xcassets */,
 				421CBD4429EC6AE4007FC1D3 /* LaunchScreen.storyboard */,
 				421CBD4729EC6AE4007FC1D3 /* Info.plist */,
+				424E14BB29F464E500407977 /* Extensions */,
 			);
 			path = CookedBooked;
 			sourceTree = "<group>";
@@ -101,10 +108,20 @@
 		421CBD5229EC77BC007FC1D3 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				424E14B929F4621100407977 /* PasswordRestViewController.swift */,
 				421CBD5329EC77D9007FC1D3 /* AccountViewController.swift */,
 				421CBD5529EC82F0007FC1D3 /* AccountOptionsCell.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		424E14BB29F464E500407977 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				424E14BC29F4656F00407977 /* AccountManagement.swift */,
+				424E14BE29F4905300407977 /* AlertManagement.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		42630E1229EF6973005138E0 /* Model */ = {
@@ -249,13 +266,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				421CBD4F29EC6BBA007FC1D3 /* LoginViewController.swift in Sources */,
+				424E14BF29F4905300407977 /* AlertManagement.swift in Sources */,
 				421CBD3E29EC6AE2007FC1D3 /* ViewController.swift in Sources */,
+				424E14BA29F4621100407977 /* PasswordRestViewController.swift in Sources */,
 				421CBD5629EC82F0007FC1D3 /* AccountOptionsCell.swift in Sources */,
 				421CBD5429EC77D9007FC1D3 /* AccountViewController.swift in Sources */,
 				42630E1429EF6983005138E0 /* User.swift in Sources */,
 				421CBD5129EC6BE2007FC1D3 /* SignViewController.swift in Sources */,
 				42630E1629EF699C005138E0 /* Post.swift in Sources */,
 				421CBD3A29EC6AE2007FC1D3 /* AppDelegate.swift in Sources */,
+				424E14BD29F4656F00407977 /* AccountManagement.swift in Sources */,
 				421CBD3C29EC6AE2007FC1D3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
