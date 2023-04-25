@@ -11,7 +11,6 @@
 Provide a platform for avid chefs and/or food enthusiasts to share their beloved recipe and connect with likeminded peers
 
 ### App Evaluation
-<!-- [Evaluation of your app across the following attributes] -->
 - **Category:** Food and Drink 🍽️
 - **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer, such as tinder or other similar apps. Functionality wouldn’t be limited to mobile devices, however mobile version could potentially have more features. 📱
 - **Story:** Provides a feed of recipes based on the user interests and user can follow the creator, like, comment, share the recipe.
