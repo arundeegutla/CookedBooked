@@ -18,6 +18,9 @@ Provide a platform for avid chefs and/or food enthusiasts to share their beloved
 - **Habit:** This app could be used as often or unoften as the user wanted depending on how deep their cooking skills are, and what exactly they’re looking for.
 - **Scope:** First we would start with user sharing their recipes. Large potential for use with crowd-sourced review applications such as Yelp.
 
+## Demo
+<video src="CookBooked.mp4" controls="controls" style="max-width: 730px;"></video>
+
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
